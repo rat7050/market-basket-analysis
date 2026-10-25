@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://market-basket-analysis-aboauko8fcxerqebbpwfxl.streamlit.app/">
-    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Open%20Dashboard-ff4b4b?style=for-the-badge&logo=streamlit" alt="Open live dashboard">
+    <img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-Open%20Dashboard-ff4b4b?style=for-the-badge&logo=streamlit" alt="Open live dashboard">
   </a>
   <a href="https://github.com/rat7050/market-basket-analysis">
     <img src="https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github" alt="GitHub repository">
@@ -12,92 +12,67 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Python-Analytics-blue?style=flat-square&logo=python" alt="Python">
   <img src="https://img.shields.io/badge/Streamlit-Dashboard-ff4b4b?style=flat-square&logo=streamlit" alt="Streamlit">
   <img src="https://img.shields.io/badge/Algorithm-Apriori-orange?style=flat-square" alt="Apriori">
   <img src="https://img.shields.io/badge/Analytics-Association%20Rules-purple?style=flat-square" alt="Association rules">
 </p>
 
-Market Basket Analysis is a data analytics project that explores product combinations within retail transactions. It uses the **Apriori algorithm** and **association rule mining** to find frequently purchased items, evaluate product relationships, and generate practical cross-selling ideas.
+Market Basket Analysis explores which products frequently appear in the same retail transaction. Using the **Apriori algorithm** and **association rule mining**, this project finds frequent itemsets, evaluates product relationships, and surfaces potential cross-selling ideas.
 
-The project includes an interactive Streamlit dashboard, a Jupyter Notebook for exploration, and downloadable CSV results.
+It includes an interactive Streamlit dashboard, a Jupyter Notebook for exploratory analysis, and downloadable CSV results.
 
 ---
 
 ## 🌐 Live Demo
 
-**[Launch the Market Basket Analysis Dashboard](https://market-basket-analysis-aboauko8fcxerqebbpwfxl.streamlit.app/)**
+### [🚀 Launch Market Basket Analysis](https://market-basket-analysis-aboauko8fcxerqebbpwfxl.streamlit.app/)
 
-Explore the dashboard, adjust analysis thresholds, inspect frequent itemsets and association rules, and download results for further review.
+Adjust the analysis thresholds, inspect frequent itemsets and association rules, explore product relationships, and download results for further analysis.
 
 ---
 
-## 📸 Dashboard Screenshots
-
-> **Add a screenshot of the live app:** capture the dashboard in your browser, then upload it to the repository at `assets/dashboard-overview.png`. The image below will appear once that file exists.
+## 📸 Dashboard Preview
 
 <p align="center">
-  <img src="assets/dashboard-overview.png" alt="Market Basket Analysis Streamlit dashboard overview" width="95%">
+  <img src="assets/dashboard-preview.svg" alt="Illustrated preview of the Market Basket Analysis dashboard" width="100%">
 </p>
 
-<p align="center"><i>Dashboard overview — replace this placeholder with a screenshot of the running app.</i></p>
+<p align="center"><i>Illustrative dashboard preview, not a live application screenshot. Add a screenshot captured from the deployed app to show the actual interface and results.</i></p>
 
-### More visual examples
+**To add a real screenshot:** Open the live demo, capture the page you want to showcase, save the image as `assets/dashboard-screenshot.png`, and add this below the preview:
 
-After uploading screenshots using the filenames below, these previews will render in GitHub:
-
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <img src="assets/top-products.png" alt="Top products chart" width="100%">
-      <br><b>Top Products</b>
-    </td>
-    <td align="center" width="50%">
-      <img src="assets/association-rules.png" alt="Association rules table and chart" width="100%">
-      <br><b>Association Rules</b>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="assets/frequent-itemsets.png" alt="Frequent itemsets table" width="100%">
-      <br><b>Frequent Itemsets</b>
-    </td>
-    <td align="center" width="50%">
-      <img src="assets/cross-selling.png" alt="Cross-selling recommendations" width="100%">
-      <br><b>Cross-Selling Ideas</b>
-    </td>
-  </tr>
-</table>
-
-*The repository contains analysis outputs and a precomputed cross-selling CSV; the screenshot files above are placeholders for UI captures, not existing images.*
+```markdown
+![Market Basket Analysis live dashboard](assets/dashboard-screenshot.png)
+```
 
 ---
 
 ## 🎯 Business Problem
 
-Retailers often want to understand which products tend to appear in the same order. These patterns can help teams explore product bundling, related-product recommendations, promotions, and store layout ideas.
+Retailers often want to know which products tend to be purchased in the same order. These patterns can inspire product bundles, related-item recommendations, promotion ideas, and merchandising experiments.
 
-This project uses historical transaction data to answer questions such as:
+This project helps explore questions such as:
 
-- Which products or combinations frequently appear in the same basket?
-- When a basket contains one item, which other items are associated with it?
-- How strong are the discovered relationships?
-- Which product relationships may be worth testing as cross-selling opportunities?
+- Which items or combinations frequently appear in the same basket?
+- When a basket contains one item, what other items are associated with it?
+- How frequent is a combination, and how strong is its association?
+- Which relationships might be worth testing as cross-selling opportunities?
 
-Association rules describe relationships in the observed data. They do **not** prove that one product purchase causes another.
+Association rules describe patterns in observed transactions. They do **not** prove that one product causes another to be purchased.
 
 ## ✨ Key Features
 
-- **Retail data cleaning** — removes cancelled invoices, missing values, invalid purchase lines, and duplicate rows.
-- **Interactive dashboard** — explore the analysis through Streamlit tabs.
-- **Country filtering** — focus analysis on one country or all available countries.
+- **Retail data cleaning** — excludes cancelled invoices, missing values, invalid purchase lines, and duplicate rows.
+- **Interactive Streamlit dashboard** — explore the results across four tabs.
+- **Country filtering** — analyse a selected country or all available countries.
 - **Adjustable thresholds** — configure minimum support, confidence, and lift.
-- **Frequent itemsets** — find combinations that appear together across transactions.
-- **Association rules** — review antecedents, consequents, support, confidence, and lift.
-- **Visual analytics** — inspect top products, country-level transactions, itemsets, and rule relationships.
-- **Cross-selling recommendations** — explore related-product ideas ranked by association strength.
-- **CSV downloads** — export frequent itemsets, association rules, and cross-selling suggestions.
-- **Jupyter Notebook** — follow the workflow and understand the analysis step by step.
+- **Frequent itemsets** — discover combinations that appear together across baskets.
+- **Association rules** — inspect antecedents, consequents, support, confidence, and lift.
+- **Visual analytics** — view top products, transactions by country, frequent combinations, and rule relationships.
+- **Cross-selling suggestions** — explore product recommendations ranked by association strength.
+- **CSV downloads** — export frequent itemsets, association rules, and recommendations.
+- **Jupyter Notebook** — follow the exploratory workflow and learn how the analysis is performed.
 
 ## 🧭 How It Works
 
@@ -117,52 +92,52 @@ Online Retail Transactions
     Apriori Frequent Itemsets
            │
            ▼
-      Association Rules
+       Association Rules
            │
            ▼
- Support • Confidence • Lift
+  Support • Confidence • Lift
            │
            ▼
  Streamlit Dashboard & CSV Exports
            │
            ▼
- Cross-Selling Ideas to Test
+   Cross-Selling Ideas to Test
 ```
 
 ## 📊 Dataset
 
 This project uses the **Online Retail** dataset from the UCI Machine Learning Repository.
 
-- **Dataset page:** [UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail)
-- **Local file expected:** `data/Online Retail.xlsx`
-- **Time period:** December 2010 to December 2011
+- **Official dataset:** [UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail)
+- **File:** `data/Online Retail.xlsx`
+- **Period covered:** December 2010 to December 2011
 - **Domain:** Online retail transactions
 
-The data includes fields such as invoice number, product description, quantity, unit price, and country. The dashboard uses positive purchase quantities and prices for this basket analysis.
+The data includes invoice numbers, product descriptions, quantities, unit prices, and country. The basket analysis works with cleaned purchase lines and counts each distinct product once per invoice.
 
-**Dataset attribution:** Chen, D. (2012). *Online Retail* [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33
+**Dataset citation:** Chen, D. (2012). *Online Retail* [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33
 
 ## 📐 Understanding the Metrics
 
-| Metric | What it tells you | How to interpret it |
+| Metric | What it measures | How to interpret it |
 |---|---|---|
-| **Support** | How often an itemset appears across all baskets | Higher support means the combination occurs more frequently |
-| **Confidence** | How often the consequent appears when the antecedent appears | Higher confidence means the rule is more reliable within the observed data |
-| **Lift** | How much more often the items occur together than expected from the consequent's baseline frequency | Lift > 1 indicates a positive association; around 1 suggests little association; below 1 suggests a negative association |
+| **Support** | Fraction of baskets containing an itemset | Higher support means the combination appears more frequently. |
+| **Confidence** | Fraction of baskets containing the antecedent that also contain the consequent | Higher confidence means the rule occurs more often within baskets containing the antecedent. |
+| **Lift** | Confidence divided by the consequent's overall support | Lift greater than 1 indicates a positive association; near 1 indicates little association; below 1 indicates a negative association. |
 
-For example, a rule `A → B` asks how often product B appears in baskets that contain product A. It does not mean buying A causes a customer to buy B.
+For a rule `A → B`, confidence describes how often B appears among baskets that contain A. It does not establish that buying A causes someone to buy B.
 
 ## 🧰 Tech Stack
 
 | Tool | Purpose |
 |---|---|
-| Python | Project implementation |
+| Python | Core project implementation |
 | Pandas | Data cleaning, transformation, and tabular analysis |
 | NumPy | Numerical operations |
-| MLxtend | Apriori algorithm and association rule mining |
+| MLxtend | Apriori and association rule mining |
 | Streamlit | Interactive application |
-| Matplotlib & Seaborn | Charts and visual analytics |
-| Jupyter Notebook | Exploratory analysis and documentation |
+| Matplotlib & Seaborn | Data visualisation |
+| Jupyter Notebook | Exploratory analysis |
 | OpenPyXL | Reading the Excel dataset |
 
 ## 📁 Project Structure
@@ -173,9 +148,11 @@ market-basket-analysis/
 ├── market_basket_analysis.ipynb
 ├── cross_selling_recommendations.csv
 ├── requirements.txt
-├── data/
-│   └── Online Retail.xlsx
-└── README.md
+├── README.md
+├── assets/
+│   └── dashboard-preview.svg
+└── data/
+    └── Online Retail.xlsx
 ```
 
 ## 💻 Run Locally
@@ -187,16 +164,16 @@ git clone https://github.com/rat7050/market-basket-analysis.git
 cd market-basket-analysis
 ```
 
-### 2. Create a virtual environment
+### 2. Create and activate a virtual environment
 
-**Windows PowerShell:**
+**Windows PowerShell**
 
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-**macOS / Linux:**
+**macOS / Linux**
 
 ```bash
 python3 -m venv .venv
@@ -212,21 +189,15 @@ pip install -r requirements.txt
 
 ### 4. Check the dataset
 
-Confirm that the Excel dataset is available at:
+Confirm that the Excel file is available at `data/Online Retail.xlsx`. It is included in this repository. If you need a fresh copy, download it from the [official UCI dataset page](https://archive.ics.uci.edu/dataset/352/online+retail).
 
-```text
-data/Online Retail.xlsx
-```
-
-If needed, download it from the [official UCI dataset page](https://archive.ics.uci.edu/dataset/352/online+retail) and place it in the `data` folder.
-
-### 5. Launch the dashboard
+### 5. Run the dashboard
 
 ```bash
 streamlit run app.py
 ```
 
-Open the local URL printed in the terminal, usually `http://localhost:8501`.
+Open the local URL printed by Streamlit, typically `http://localhost:8501`.
 
 ### 6. Run the notebook
 
@@ -234,30 +205,30 @@ Open the local URL printed in the terminal, usually `http://localhost:8501`.
 jupyter notebook
 ```
 
-Open `market_basket_analysis.ipynb` and run its cells from top to bottom.
+Open `market_basket_analysis.ipynb` and run the cells from top to bottom.
 
-## 🔎 How to Use the Dashboard
+## 🔎 Using the Dashboard
 
-1. Open the [live dashboard](https://market-basket-analysis-aboauko8fcxerqebbpwfxl.streamlit.app/) or run the app locally.
-2. Choose a country, or leave the selection on all countries.
-3. Adjust minimum support, confidence, and lift in the sidebar.
-4. Review the **Overview** tab for top products and transaction patterns.
-5. Explore **Frequent Itemsets** to find common product combinations.
-6. Inspect **Association Rules** to compare confidence and lift.
-7. Use **Cross-Selling** for potential recommendations.
-8. Download the resulting CSV files for further analysis.
+1. Open the [live dashboard](https://market-basket-analysis-aboauko8fcxerqebbpwfxl.streamlit.app/) or start it locally.
+2. Select a country or keep **All countries** selected.
+3. Adjust minimum support, confidence, lift, and maximum itemset size in the sidebar.
+4. Review the **Overview** tab for top products and country-level transaction patterns.
+5. Explore **Frequent Itemsets** to find common combinations.
+6. Open **Association Rules** to compare support, confidence, and lift.
+7. Use **Cross-Selling** to review potential related-product suggestions.
+8. Download the CSV files for further analysis.
 
-Lower support thresholds may reveal more combinations but can increase computation time and produce less common patterns. Increase thresholds to focus on more frequent associations.
+Lower support thresholds may find more combinations but can increase computation time and surface less frequent patterns. Increase the thresholds to focus on stronger or more common associations.
 
 ## 💼 Potential Business Applications
 
-- **Product recommendations:** suggest related items on product pages.
-- **Bundle experiments:** test offers for products that often appear together.
-- **Merchandising:** explore whether associated items should be displayed nearby.
+- **Product recommendations:** display relevant related items on product pages.
+- **Bundle experiments:** test bundles containing products that often appear together.
+- **Merchandising:** investigate whether associated products should be displayed nearby.
 - **Promotion planning:** develop hypotheses for targeted campaigns.
-- **Inventory coordination:** check availability before promoting related items.
+- **Inventory coordination:** check stock levels before promoting associated items.
 
-These are ideas to validate through business experiments. Association metrics alone do not guarantee increased revenue or profit.
+These are ideas to validate through controlled tests and business metrics. Association metrics alone do not guarantee increased sales or profit.
 
 ## ⚠️ Data & Methodology Notes
 
@@ -266,30 +237,28 @@ These are ideas to validate through business experiments. Association metrics al
 - Non-positive quantities and unit prices are excluded.
 - Duplicate rows are removed.
 - Each product is counted once per invoice for basket presence; quantity does not multiply product presence.
-- Apriori may become slow with low support thresholds or many distinct products. Start with a sensible threshold, such as 0.02, and adjust carefully.
+- Apriori can be slow with low support thresholds or many unique products. Start with a sensible value such as 0.02 and adjust carefully.
 - Recorded sales value is not the same as profit.
 - Association does not prove causation.
 
 ## 🚀 Future Improvements
 
-- Add product-level filters and date-range analysis.
-- Compare product associations across customer segments and time periods.
-- Evaluate recommendations using an A/B test or other business validation.
-- Add a product search field for finding rules related to a selected item.
+- Add date-range and product-level filters.
+- Compare associations across customer segments and time periods.
+- Validate recommendations using experiments and actual sales/profit outcomes.
+- Add product search to find rules involving a selected item.
 - Improve performance for larger transaction datasets.
 - Add repeatable automated tests and continuous integration.
-- Include actual dashboard screenshots in the repository.
+- Add screenshots captured directly from the deployed app.
 
 ## 👨‍💻 Author
 
 **Ratnesh Kumar**
 
 - **GitHub:** [@rat7050](https://github.com/rat7050)
-- **Project repository:** [Market Basket Analysis](https://github.com/rat7050/market-basket-analysis)
-- **Live application:** [Open Streamlit Dashboard](https://market-basket-analysis-aboauko8fcxerqebbpwfxl.streamlit.app/)
+- **Repository:** [Market Basket Analysis](https://github.com/rat7050/market-basket-analysis)
+- **Live Demo:** [Open Streamlit Dashboard](https://market-basket-analysis-aboauko8fcxerqebbpwfxl.streamlit.app/)
 
 ---
 
-<p align="center">
-  <b>Built with Python, Pandas, MLxtend, and Streamlit.</b>
-</p>
+<p align="center"><b>Built with Python, Pandas, MLxtend, and Streamlit.</b></p>

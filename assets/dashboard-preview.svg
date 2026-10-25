@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="980" viewBox="0 0 1440 980">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#101d3b"/><stop offset="100%" stop-color="#263c68"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#6c63ff"/><stop offset="100%" stop-color="#19b6a4"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#13203c" flood-opacity=".12"/></filter>
+  <style>
+    .txt{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#18243b}
+    .muted{fill:#78849b;font-family:Inter,Segoe UI,Arial,sans-serif}
+    .h{font-family:Inter,Segoe UI,Arial,sans-serif;font-weight:700;fill:#17233c}
+    .white{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#fff}
+    .small{font-size:13px}.med{font-size:16px}.bold{font-weight:700}
+  </style>
+</defs>
+<rect width="1440" height="980" rx="26" fill="#f3f6fb"/>
+<rect x="0" y="0" width="1440" height="170" rx="26" fill="url(#bg)"/>
+<rect x="0" y="142" width="1440" height="28" fill="url(#bg)"/>
+<circle cx="1305" cy="34" r="120" fill="#ffffff" opacity=".035"/><circle cx="1375" cy="155" r="90" fill="#20c6ae" opacity=".08"/>
+<rect x="56" y="37" width="54" height="54" rx="17" fill="url(#accent)"/>
+<path d="M69 55h10l8 8 8-8h4v26h-8V66l-4 4-4-4v15h-8V55z" fill="#fff"/>
+<text x="130" y="60" class="white" font-size="30" font-weight="700">Market Basket Analysis</text>
+<text x="130" y="91" class="white" font-size="16" opacity=".78">Discover product relationships. Find smarter cross-selling opportunities.</text>
+<rect x="1112" y="42" width="264" height="39" rx="19" fill="#ffffff" opacity=".13"/>
+<circle cx="1134" cy="61" r="5" fill="#5ae0c5"/>
+<text x="1148" y="66" class="white" font-size="13" font-weight="600">ILLUSTRATIVE DASHBOARD PREVIEW</text>
+
+<!-- Sidebar -->
+<rect x="34" y="195" width="270" height="744" rx="20" fill="#fff" filter="url(#shadow)"/>
+<text x="62" y="236" class="h" font-size="18">⚙ Analysis Settings</text>
+<text x="62" y="270" class="muted small">COUNTRY</text>
+<rect x="60" y="283" width="218" height="42" rx="9" fill="#f7f9fc" stroke="#e2e8f1"/>
+<text x="76" y="309" class="txt med">All countries</text><path d="M252 300l6 6 6-6" fill="none" stroke="#69758b" stroke-width="2"/>
+<text x="62" y="359" class="muted small">MINIMUM SUPPORT</text>
+<text x="62" y="386" class="h med">0.020</text><path d="M64 407H270" stroke="#e4eaf3" stroke-width="6" stroke-linecap="round"/><path d="M64 407H143" stroke="#6c63ff" stroke-width="6" stroke-linecap="round"/><circle cx="143" cy="407" r="8" fill="#6c63ff" stroke="#fff" stroke-width="3"/>
+<text x="62" y="449" class="muted small">MINIMUM CONFIDENCE</text>
+<text x="62" y="476" class="h med">0.30</text><path d="M64 497H270" stroke="#e4eaf3" stroke-width="6" stroke-linecap="round"/><path d="M64 497H131" stroke="#19b6a4" stroke-width="6" stroke-linecap="round"/><circle cx="131" cy="497" r="8" fill="#19b6a4" stroke="#fff" stroke-width="3"/>
+<text x="62" y="539" class="muted small">MINIMUM LIFT</text>
+<text x="62" y="566" class="h med">1.00</text><path d="M64 587H270" stroke="#e4eaf3" stroke-width="6" stroke-linecap="round"/><path d="M64 587H104" stroke="#6c63ff" stroke-width="6" stroke-linecap="round"/><circle cx="104" cy="587" r="8" fill="#6c63ff" stroke="#fff" stroke-width="3"/>
+<text x="62" y="629" class="muted small">MAX PRODUCTS PER ITEMSET</text>
+<rect x="60" y="643" width="100" height="39" rx="9" fill="#eeedff" stroke="#6c63ff"/><text x="110" y="668" text-anchor="middle" class="txt med bold">2 items</text>
+<rect x="170" y="643" width="108" height="39" rx="9" fill="#fff" stroke="#e2e8f1"/><text x="224" y="668" text-anchor="middle" class="muted med">3 items</text>
+<rect x="60" y="718" width="218" height="84" rx="12" fill="#f4f7ff"/>
+<text x="76" y="746" class="txt small bold">Tip</text><text x="76" y="768" class="muted small">Lower support can reveal more</text><text x="76" y="786" class="muted small">patterns, but may take longer.</text>
+<text x="62" y="895" class="muted small">Powered by Apriori</text>
+
+<!-- Main content -->
+<text x="337" y="222" class="h" font-size="22">Business Overview</text>
+<text x="337" y="248" class="muted med">A quick view of cleaned retail transactions</text>
+<!-- Metric cards -->
+<g filter="url(#shadow)">
+<rect x="336" y="270" width="244" height="116" rx="17" fill="#fff"/>
+<rect x="598" y="270" width="244" height="116" rx="17" fill="#fff"/>
+<rect x="860" y="270" width="244" height="116" rx="17" fill="#fff"/>
+<rect x="1122" y="270" width="244" height="116" rx="17" fill="#fff"/>
+</g>
+<rect x="355" y="289" width="38" height="38" rx="12" fill="#eeedff"/><text x="374" y="314" text-anchor="middle" font-size="20">▤</text>
+<text x="405" y="303" class="muted small">CLEANED RECORDS</text><text x="405" y="334" class="h" font-size="21">Calculated live</text><text x="355" y="363" class="muted small">After cleaning filters</text>
+<rect x="617" y="289" width="38" height="38" rx="12" fill="#dff8f3"/><text x="636" y="314" text-anchor="middle" font-size="20">▦</text>
+<text x="667" y="303" class="muted small">TRANSACTIONS</text><text x="667" y="334" class="h" font-size="21">Calculated live</text><text x="617" y="363" class="muted small">Unique invoice baskets</text>
+<rect x="879" y="289" width="38" height="38" rx="12" fill="#fff0dc"/><text x="898" y="314" text-anchor="middle" font-size="20">◇</text>
+<text x="929" y="303" class="muted small">UNIQUE PRODUCTS</text><text x="929" y="334" class="h" font-size="21">Calculated live</text><text x="879" y="363" class="muted small">Distinct descriptions</text>
+<rect x="1141" y="289" width="38" height="38" rx="12" fill="#e4efff"/><text x="1160" y="314" text-anchor="middle" font-size="20">£</text>
+<text x="1191" y="303" class="muted small">RECORDED SALES VALUE</text><text x="1191" y="334" class="h" font-size="21">Calculated live</text><text x="1141" y="363" class="muted small">Not a profit calculation</text>
+
+<!-- tabs -->
+<rect x="336" y="411" width="1030" height="49" rx="12" fill="#e9eef7"/>
+<rect x="344" y="418" width="165" height="35" rx="9" fill="#fff"/>
+<text x="426" y="440" text-anchor="middle" class="txt small bold">📈 Overview</text>
+<text x="590" y="440" text-anchor="middle" class="muted small">🧺 Frequent Itemsets</text>
+<text x="815" y="440" text-anchor="middle" class="muted small">🔗 Association Rules</text>
+<text x="1054" y="440" text-anchor="middle" class="muted small">💡 Cross-Selling</text>
+
+<!-- chart card -->
+<rect x="336" y="480" width="590" height="425" rx="18" fill="#fff" filter="url(#shadow)"/>
+<text x="363" y="519" class="h" font-size="18">Most Frequently Appearing Products</text>
+<text x="363" y="541" class="muted small">Illustrative chart layout • live values are calculated in the app</text>
+<g stroke="#e9edf4" stroke-width="1">
+<path d="M510 578H890"/><path d="M510 635H890"/><path d="M510 692H890"/><path d="M510 749H890"/><path d="M510 806H890"/>
+</g>
+<g class="muted" font-size="12">
+<text x="363" y="588">Product A</text><text x="363" y="645">Product B</text><text x="363" y="702">Product C</text><text x="363" y="759">Product D</text><text x="363" y="816">Product E</text>
+</g>
+<rect x="510" y="568" width="300" height="28" rx="7" fill="#6c63ff"/><rect x="510" y="625" width="250" height="28" rx="7" fill="#8179ff"/><rect x="510" y="682" width="213" height="28" rx="7" fill="#9992ff"/><rect x="510" y="739" width="170" height="28" rx="7" fill="#19b6a4"/><rect x="510" y="796" width="135" height="28" rx="7" fill="#65cdbf"/>
+<text x="363" y="866" class="muted small">Bars are illustrative and do not represent measured values.</text>
+
+<!-- rules table card -->
+<rect x="948" y="480" width="418" height="425" rx="18" fill="#fff" filter="url(#shadow)"/>
+<text x="974" y="519" class="h" font-size="18">Association Rules</text>
+<text x="974" y="541" class="muted small">Understand product relationships</text>
+<rect x="972" y="565" width="370" height="40" rx="8" fill="#f2f5fb"/>
+<text x="986" y="589" class="txt small bold">IF CUSTOMER BUYS</text><text x="1160" y="589" class="txt small bold">RECOMMEND</text>
+<path d="M972 614H1342M972 682H1342M972 750H1342M972 818H1342" stroke="#edf1f7"/>
+<text x="986" y="642" class="txt small">Product A</text><text x="1160" y="642" class="txt small">Product B</text>
+<text x="986" y="710" class="txt small">Product B</text><text x="1160" y="710" class="txt small">Product C</text>
+<text x="986" y="778" class="txt small">Product C</text><text x="1160" y="778" class="txt small">Product D</text>
+<text x="986" y="846" class="txt small">Product D</text><text x="1160" y="846" class="txt small">Product E</text>
+<rect x="974" y="866" width="366" height="24" rx="7" fill="#f0edff"/>
+<text x="1157" y="882" text-anchor="middle" class="muted small">Illustrative rows — actual rules depend on filters</text>
+
+<text x="720" y="958" text-anchor="middle" class="muted small">Python • Pandas • MLxtend • Streamlit  |  Visual preview, not a live application capture</text>
+</svg>
